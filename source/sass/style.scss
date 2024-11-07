@@ -2,3 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./blocks/test.scss";
