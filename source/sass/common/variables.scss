@@ -1,10 +1,32 @@
-/* здесь используйте глобальные переменные */
-$background-color: #ffffff;
+/* text color */
 $main-text-color: #102654;
-$accent-text-color: #FFFFFF;
-$dark-accent-text-color: #103AAE;
-$gradient-text-color: linear-gradient(#D10A42, #0041CA);
+$accent-text-color: #ffffff;
+$dark-accent-text-color: #103aae;
+$gradient-text-color: linear-gradient(#d10a42, #0041ca);
 
+/* background color */
+$background: #ffffff;
+$background-extra: #f8f9fc;
+$background-dark: #102654;
+$background-footer: #030a1a;
+$blocks-extra: #1c3374;
+$main-screen: linear-gradient(#003d85, #b80027);
+$banners: #ed0233;
+
+/* icons color */
+$icon-light: #ffffff;
+$icon-dark: #102654;
+
+/* form color */
+$form-base: #ffffff;
+$form-error: #ff121f;
+
+/* buttons color */
+$shadow-light: #ffffff;
+$shadow-dark: #102654;
+$shadow-dark-extra: #1c3374;
+$button-fill: linear-gradient(#ed0233, #003eb7);
+$tab-state: #d10a42;
 
 //viewports
 $tablet-width: 768px;
