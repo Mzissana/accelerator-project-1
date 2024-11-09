@@ -23,58 +23,66 @@
 
     <header class="main-header" data-test="hero">
       <div class="main-header__wrapper">
-        <div class="main-header__logo-wrapper">
-        <a class="main-header__logo link-reset" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="170" height="36" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="82" height="36" type="image/svg+xml">
-            <img src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2go">
-          </picture>
-        </a>
-        <span class="main-header__logo-subtitle" >Интернет-магазин кофейных напитков</span>
-      </div>
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list list-reset">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link link-reset" href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link link-reset " href="#">
-                  Каталог
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link link-reset" href="#">
-                  Доставка
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link link-reset" href="#">
-                  О нас
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-nav__buttons">
-            <button class=" button main-nav__button main-nav__button--login" type="button">
-              <span class="main-nav__button-subtitle">Войти</span>
-            </button>
-            <button class=" button main-nav__button main-nav__button--cart" type="button">
-              <span class="main-nav__button-subtitle">Корзина</span>
-            </button>
-            <button class="main-nav__toggle button main-nav__button main-nav__button--open main-nav__button--close js-toggle-button" type="button">
-              <span class="main-nav__button-subtitle">Открыть меню</span>
-            </button>
-          </div>
 
-        </nav>
+        <section class="main-header__navigation navigation">
+          <div class="navigation__wrapper">
+
+            <div class="navigation__logo">
+              <a class="navigation__logo-link link-reset" href="index.html">
+                <img src="./img/supergym-logo.svg" width="100" height="20" alt="Логотип Supergym">
+              </a>
+              <span class="navigation__logo-subtitle" >Фитнес центр в Омске</span>
+            </div>
+
+            <div class="navigation__contacts">
+              <a href="tel:+78005555555">8 800 555-55-55</a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="main-header__hero hero">
+          <div class="hero__wrapper">
+            <div class="hero__zones">
+                <ul>
+                  <li>
+                    Тренажёрный зал
+                  </li>
+                  <li>
+                    Групповые занятия
+                  </li>
+                  <li>
+                    Кардио-зона
+                  </li>
+                </ul>
+            </div>
+            <div class="hero__main-info main-info">
+              <p class="main-info__city">
+                Омск
+              </p>
+              <h1 class="main-info__header">
+                Фитнес центр
+              </h1>
+              <button class="main-info__order-button">
+                Купить абонемент
+              </button>
+            </div>
+
+            <picture>
+              <source width="600" height="600" type="image/webp" media="(min-width: 1440px)" srcset="images/slider-flat-white-desktop@1x.webp 1x, images/slider-flat-white-desktop@2x.webp 2x">
+
+              <source width="476" height="476" type="image/webp" media="(min-width: 768px)" srcset="images/slider-flat-white-tablet@1x.webp 1x, images/slider-flat-white-tablet@2x.webp 2x">
+
+              <source width="280" height="280" type="image/webp" srcset="images/slider-flat-white-mobile@1x.webp 1x, images/slider-flat-white-mobile@2x.webp 2x">
+
+              <source width="600" height="600" type="image/png" media="(min-width: 1440px)" srcset="images/slider-flat-white-desktop@1x.png 1x, images/slider-flat-white-desktop@2x.png 2x">
+              <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/slider-flat-white-tablet@1x.png 1x, images/slider-flat-white-tablet@2x.png 2x">
+              <img class="hero__image" src="./img/hero-img-tablet@1x.jpg" srcset="./img/hero-img-tablet@2x.jpg 2x" alt="" width="280" height="280">
+            </picture>
+          </div>
+        </section>
       </div>
     </header>
-
-
 
     <div data-test="about">about</div>
     <div data-test="price">price</div>
