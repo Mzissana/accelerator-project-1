@@ -19,11 +19,61 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     примеры требуемых атрибутов data-test="*" -->
-    <section>
-      <div data-test="hero">
 
+
+    <header class="main-header" data-test="hero">
+      <div class="main-header__wrapper">
+        <div class="main-header__logo-wrapper">
+        <a class="main-header__logo link-reset" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="170" height="36" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="82" height="36" type="image/svg+xml">
+            <img src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2go">
+          </picture>
+        </a>
+        <span class="main-header__logo-subtitle" >Интернет-магазин кофейных напитков</span>
       </div>
-    </section>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list list-reset">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link link-reset" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link-reset " href="#">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link-reset" href="#">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link-reset" href="#">
+                  О нас
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-nav__buttons">
+            <button class=" button main-nav__button main-nav__button--login" type="button">
+              <span class="main-nav__button-subtitle">Войти</span>
+            </button>
+            <button class=" button main-nav__button main-nav__button--cart" type="button">
+              <span class="main-nav__button-subtitle">Корзина</span>
+            </button>
+            <button class="main-nav__toggle button main-nav__button main-nav__button--open main-nav__button--close js-toggle-button" type="button">
+              <span class="main-nav__button-subtitle">Открыть меню</span>
+            </button>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+
 
 
     <div data-test="about">about</div>
