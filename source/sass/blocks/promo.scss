@@ -1,0 +1,41 @@
+.promo {
+  width: 100%;
+  background-image: linear-gradient(to right, #1c3477 0, #1a3578 39%, #73184b 76%, #b4022a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__wrapper, .promo__hero {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.promo__navigation {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $accent-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+
+

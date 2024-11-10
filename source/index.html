@@ -21,63 +21,59 @@
     примеры требуемых атрибутов data-test="*" -->
 
 
-    <header class="main-header" data-test="hero">
-      <div class="main-header__wrapper">
+    <header class="promo" data-test="hero">
+      <div class="promo__wrapper">
 
-        <section class="main-header__navigation navigation">
+        <section class="promo__navigation navigation">
           <div class="navigation__wrapper">
 
             <div class="navigation__logo">
-              <a class="navigation__logo-link link-reset" href="index.html">
-                <img src="./img/supergym-logo.svg" width="100" height="20" alt="Логотип Supergym">
-              </a>
-              <span class="navigation__logo-subtitle" >Фитнес центр в Омске</span>
+                <img class="navigation__logo-image" src="./img/supergym-logo.svg" width="100" height="20" alt="Логотип Supergym">
             </div>
 
             <div class="navigation__contacts">
-              <a href="tel:+78005555555">8 800 555-55-55</a>
+              <a class="navigation__contacts-link link-reset" href="tel:+78005555555">8 800 555-55-55</a>
             </div>
 
           </div>
         </section>
 
-        <section class="main-header__hero hero">
+        <section class="promo__hero hero">
           <div class="hero__wrapper">
-            <div class="hero__zones">
-                <ul>
-                  <li>
+            <div class="hero__info">
+              <div class="hero__zones zones">
+                <ul class="zones__list list-reset">
+                  <li class="zones__item">
                     Тренажёрный зал
                   </li>
-                  <li>
+                  <li class="zones__item">
                     Групповые занятия
                   </li>
-                  <li>
+                  <li class="zones__item">
                     Кардио-зона
                   </li>
                 </ul>
-            </div>
-            <div class="hero__main-info main-info">
-              <p class="main-info__city">
-                Омск
-              </p>
-              <h1 class="main-info__header">
-                Фитнес центр
-              </h1>
-              <button class="main-info__order-button">
+              </div>
+
+              <div class="hero__main-info main-info">
+                <p class="main-info__city">
+                  Омск
+                </p>
+                <h1 class="main-info__header">
+                  Фитнес центр
+                </h1>
+              </div>
+
+              <button class="main-info__order-button button-reset">
                 Купить абонемент
               </button>
             </div>
 
             <picture>
-              <source width="600" height="600" type="image/webp" media="(min-width: 1440px)" srcset="images/slider-flat-white-desktop@1x.webp 1x, images/slider-flat-white-desktop@2x.webp 2x">
-
-              <source width="476" height="476" type="image/webp" media="(min-width: 768px)" srcset="images/slider-flat-white-tablet@1x.webp 1x, images/slider-flat-white-tablet@2x.webp 2x">
-
-              <source width="280" height="280" type="image/webp" srcset="images/slider-flat-white-mobile@1x.webp 1x, images/slider-flat-white-mobile@2x.webp 2x">
-
-              <source width="600" height="600" type="image/png" media="(min-width: 1440px)" srcset="images/slider-flat-white-desktop@1x.png 1x, images/slider-flat-white-desktop@2x.png 2x">
-              <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/slider-flat-white-tablet@1x.png 1x, images/slider-flat-white-tablet@2x.png 2x">
-              <img class="hero__image" src="./img/hero-img-tablet@1x.jpg" srcset="./img/hero-img-tablet@2x.jpg 2x" alt="" width="280" height="280">
+              <source width="500" height="524" type="image/webp" media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.webp 1x, ./img/hero-img-desktop@2x.webp 2x">
+              <source width="324" height="390" type="image/webp" srcset="./img/hero-img-tablet@1x.webp 1x, ./img/hero-img-tablet@2x.webp 2x">
+              <source width="500" height="524" type="image/jpg" media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.jpg 1x, ./img/hero-img-desktop@2x.jpg 2x">
+              <img class="hero__image" src="./img/hero-img-tablet@1x.jpg" srcset="./img/hero-img-tablet@2x.jpg 2x" alt="Supergym персонаж" width="324" height="390">
             </picture>
           </div>
         </section>

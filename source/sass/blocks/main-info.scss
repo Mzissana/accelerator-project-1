@@ -1,0 +1,83 @@
+.main-info {
+  color: $accent-text-color;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 40px;
+  }
+}
+
+.main-info__city {
+  font-family: $accent-font;
+  font-weight: 600;
+  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.main-info__header {
+  font-family: $accent-font;
+  font-weight: 800;
+  margin: 0;
+  font-size: 62px;
+  line-height: 62px;
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
+}
+
+.main-info__order-button {
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $accent-text-color;
+  border: 2px solid;
+  border-color: $shadow-light;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0;
+    margin-left: 0;
+  }
+}
+
+
