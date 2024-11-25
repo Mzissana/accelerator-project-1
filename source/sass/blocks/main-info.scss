@@ -65,6 +65,8 @@
   color: $accent-text-color;
   border: 2px solid;
   border-color: $shadow-light;
+  text-align: center;
+  padding: 22px 10px;
 
   @media (min-width: $tablet-width) {
     width: 185px;

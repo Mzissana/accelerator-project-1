@@ -21,7 +21,7 @@
     примеры требуемых атрибутов data-test="*" -->
 
 
-    <header class="promo" data-test="hero">
+    <header class="promo page__header" data-test="hero">
       <div class="promo__wrapper">
 
         <section class="promo__navigation navigation">
@@ -64,9 +64,9 @@
                 </h1>
               </div>
 
-              <button class="main-info__order-button button-reset">
+              <a class="main-info__order-button link-reset" href="#prices">
                 Купить абонемент
-              </button>
+              </a>
             </div>
 
             <picture>
@@ -80,12 +80,471 @@
       </div>
     </header>
 
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
+    <main class="page__main main">
+      <section class="main__about about" data-test="about">
+        <div class="about__wrapper">
+          <div class="about__info">
+            <h2 class="about__info-title">Тренажёрный зал</h2>
+            <p class="about__info-subtitle">Просторный зал площадью 900 кв/м</p>
+            <p class="about__info-description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="about__info-additional">
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+
+          <div class="about__images">
+            <picture>
+              <source width="660" height="400" type="image/webp" media="(min-width: 1366px)" srcset="./img/interior-desktop@1x.webp 1x, ./img/interior-desktop@2x.webp 2x">
+              <source width="678" height="345" type="image/webp" media="(min-width: 768px)" srcset="./img/interior-tablet@1x.webp 1x, ./img/interior-tablet@2x.webp 2x">
+              <source width="320" height="280" type="image/webp" srcset="./img/interior-mobile@1x.webp 1x, ./img/interior-mobile@2x.webp 2x">
+              <source width="660" height="400" type="image/jpg" media="(min-width: 1366px)" srcset="./img/interior-desktop@1x.jpg 1x, ./img/interior-desktop@2x.jpg 2x">
+              <source width="678" height="345" type="image/jpg" srcset="./img/interior-tablet@1x.jpg 1x, ./img/interior-tablet@2x.jpg 2x">
+              <img class="about__image" src="./img/interior-mobile@1x.jpg" srcset="./img/interior-mobile@2x.jpg 2x" alt="Помещение Supergym внутри" width="320" height="280">
+            </picture>
+
+            <picture>
+              <source width="360" height="230" type="image/webp" media="(min-width: 1366px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
+              <source width="270" height="170" type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
+              <source width="320" height="170" type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
+              <source width="360" height="230" type="image/jpg" media="(min-width: 1366px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+              <source width="270" height="170" type="image/jpg" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+              <img class="about__video-image" src="./img/video-tablet@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Видео-экскурсия Supergym внутри" width="320" height="170">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__prices prices" data-test="price" id="prices">
+        <div class="prices__wrapper">
+          <div class="prices__tabs tabs">
+            <h2 class="tabs__header">Абонементы</h2>
+            <div class="tabs__navigation">
+              <button class="tabs__navigation-button button-reset tabs__navigation-button--active" type="button">1 месяц</button>
+              <button class="tabs__navigation-button button-reset" type="button">6 месяцев</button>
+              <button class="tabs__navigation-button button-reset" type="button">12 месяцев</button>
+            </div>
+            <div class="tabs__membership-cards membership-cards">
+              <ul class="membership-cards__list membership-cards__list--one-month membership-cards__list--shown list-reset" id="one-month">
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    C тренером
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    12 занятий
+                  </p>
+                  <p class="membership-card__price" data-text="5000">
+                    5000
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Дневной
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 17:00
+                  </p>
+                  <p class="membership-card__price" data-text="1700">
+                    1700
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Полный день
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 22:00
+                  </p>
+                  <p class="membership-card__price" data-text="2700">
+                    2700
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+              </ul>
+
+              <ul class="membership-cards__list membership-cards__list--six-months list-reset" id="six-months">
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    C тренером
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    12 занятий
+                  </p>
+                  <p class="membership-card__price" data-text="30000">
+                    30000
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Дневной
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 17:00
+                  </p>
+                  <p class="membership-card__price" data-text="10200">
+                    10200
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Полный день
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 22:00
+                  </p>
+                  <p class="membership-card__price" data-text="16200">
+                    16200
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+              </ul>
+
+              <ul class="membership-cards__list membership-cards__list--twelve-months list-reset" id="twelve-months">
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    C тренером
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    12 занятий
+                  </p>
+                  <p class="membership-card__price" data-text="60000">
+                    60000
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Дневной
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 17:00
+                  </p>
+                  <p class="membership-card__price" data-text="20400">
+                    20400
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+
+                <li class="membership-cards__item membership-card">
+                  <h3 class="membership-card__title">
+                    Полный день
+                  </h3>
+                  <p class="membership-card__subtitle">
+                    с 8:00 до 22:00
+                  </p>
+                  <p class="membership-card__price" data-text="32400">
+                    32400
+                  </p>
+                  <button class="membership-card__button button-reset" type="button">Купить абонемент</button>
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main__competitions competitions" data-test="games">
+        <div class="competitions__wrapper">
+          <div class="competitions__ad ad">
+            <div class="ad__wrapper">
+              <div class="ad__info">
+                <h3 class="ad__title">Super Games</h3>
+                <div class="ad__timetable ad-timetable">
+                  <div class="ad-timetable__date">
+                    <p class="ad-timetable__header">Дата</p>
+                    <p class="ad-timetable__content ad-timetable__content--date">
+                      7
+                      <span class="ad-timetable__content-extra">Марта 2019</span>
+                    </p>
+                  </div>
+                  <div class="ad-timetable__time">
+                    <p class="ad-timetable__header">Время</p>
+                    <p class="ad-timetable__content">
+                      12:00
+                    </p>
+                  </div>
+                </div>
+                <p class="ad__subtitle">Ежегодные соревнования по CrossFit</p>
+              </div>
+              <button class="ad__button button-reset">
+                Заполнить заявку
+              </button>
+            </div>
+          </div>
+          <picture>
+            <source width="660" height="500" type="image/webp" media="(min-width: 1366px)" srcset="./img/games-ad-desktop@1x.webp 1x, ./img/games-ad-desktop@2x.webp 2x">
+            <source width="378" height="348" type="image/webp" media="(min-width: 768px)" srcset="./img/games-ad-tablet@1x.webp 1x, ./img/games-ad-tablet@2x.webp 2x">
+            <source width="290" height="290" type="image/webp" srcset="./img/games-ad-mobile@1x.webp 1x, ./img/games-ad-mobile@2x.webp 2x">
+            <source width="660" height="500" type="image/jpg" media="(min-width: 1366px)" srcset="./img/games-ad-desktop@1x.jpg 1x, ./img/games-ad-desktop@2x.jpg 2x">
+            <source width="378" height="348" type="image/jpg" srcset="./img/games-ad-tablet@1x.jpg 1x, ./img/games-ad-tablet@2x.jpg 2x">
+            <img class="competitions__image" src="./img/video-tablet@1x.jpg" srcset="./img/games-ad-mobile@2x.jpg 2x" alt="Соревнования по CrossFit" width="290" height="290">
+          </picture>
+
+        </div>
+      </section>
+
+      <section class="main__juri juri" data-test="juri">
+        <div class="juri__wrapper">
+          <h2 class="juri__header">Жюри</h2>
+          <div class="juri__list">
+
+          <button class="jury__next-button" type="button">
+            <span class="jury__button-text">Перейти к следующему члену жюри</span>
+          </button>
+          <button class="jury__back-button" type="button">
+            <span class="jury__button-text">Перейти к следующему члену жюри</span>
+          </button>
+
+          <ul class="juri__list-wrapper list-reset">
+            <li class="juri__item juri-card">
+              <figure class="juri-card__figure">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="./img/trainer-anna@1x.webp 1x, ./img/trainer-anna@2x.webp 2x">
+                  <img class="juri-card__image" src="./img/trainer-anna@1x.jpg" srcset="./img/trainer-anna@2x.jpg 2x" alt="Член жюри Анна Павлова" width="260" height="300">
+                </picture>
+                <figcaption class="juri-card__image-caption">Анна&nbsp;Павлова</figcaption>
+               </figure>
+            </li>
+
+            <li class="juri__item juri-card">
+              <figure class="juri-card__figure">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="./img/trainer-alexei@1x.webp 1x, ./img/trainer-alexei@2x.webp 2x">
+                  <img class="juri-card__image" src="./img/trainer-alexei@1x.jpg" srcset="./img/trainer-alexei@2x.jpg 2x" alt="Член жюри Алексей Лавров" width="260" height="300">
+                </picture>
+                <figcaption class="juri-card__image-caption">Алексей&nbsp;Лавров</figcaption>
+               </figure>
+            </li>
+
+            <li class="juri__item juri-card">
+              <figure class="juri-card__figure">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="./img/trainer-alexander@1x.webp 1x, ./img/trainer-alexander@2x.webp 2x">
+                  <img class="juri-card__image" src="./img/trainer-alexander@1x.jpg" srcset="./img/trainer-alexander@2x.jpg 2x" alt="Член жюри Александр Пашков" width="260" height="300">
+                </picture>
+                <figcaption class="juri-card__image-caption">Александр&nbsp;Пашков</figcaption>
+               </figure>
+            </li>
+
+            <li class="juri__item juri-card">
+              <figure class="juri-card__figure">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="./img/trainer-maria@1x.webp 1x, ./img/trainer-maria@2x.webp 2x">
+                  <img class="juri-card__image" src="./img/trainer-maria@1x.jpg" srcset="./img/trainer-maria@2x.jpg 2x" alt="Член жюри Мария Кетова" width="260" height="300">
+                </picture>
+                <figcaption class="juri-card__image-caption">Мария&nbsp;Кетова</figcaption>
+               </figure>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </section>
+
+      <section class="main__features features" data-test="features">
+        <div class="features__wrapper">
+          <h2 class="features__header">Наши преимущества</h2>
+
+          <div class="features__content-wrapper">
+            <div class="features__list-wrapper">
+              <ul class="features__list list-reset">
+                <li class="features__item features-card">
+                  <p class="features-card__statistics">
+                    900
+                    <span class="features-card__statistics-subtitle">кв/м</span>
+                  </p>
+                  <div class="features-card__info-wrapper">
+                  <h3 class="features-card__header">Площадь</h3>
+                  <p class="features-card__subtitle">Занимайтесь без очередей и толкучки</p>
+                  </div>
+                </li>
+
+                <li class="features__item features-card">
+                  <p class="features-card__statistics">
+                    70
+                    <span class="features-card__statistics-subtitle">машин</span>
+                  </p>
+                  <div class="features-card__info-wrapper">
+                    <h3 class="features-card__header">Собственная парковка</h3>
+                    <p class="features-card__subtitle">Вы всегда найдёте место для своей машины&nbsp;на нашей парковке</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="features__list-wrapper features__list-wrapper--accent">
+              <ul class="features__list list-reset">
+                <li class="features__item features-card">
+                  <p class="features-card__statistics">
+                    100
+                    <span class="features-card__statistics-subtitle">Тренажёров</span>
+                  </p>
+                  <p class="features-card__subtitle">Современные тренажёры на все группы мышц</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="features__list-wrapper">
+              <ul class="features__list list-reset">
+                <li class="features__item features-card">
+                  <p class="features-card__statistics">
+                    350
+                    <span class="features-card__statistics-subtitle">мест</span>
+                  </p>
+                  <div class="features-card__info-wrapper">
+                  <h3 class="features-card__header">Комфорт</h3>
+                  <p class="features-card__subtitle">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                  </div>
+                </li>
+
+                <li class="features__item features-card">
+                  <p class="features-card__statistics">
+                    5+
+                    <span class="features-card__statistics-subtitle">лет</span>
+                  </p>
+                  <div class="features-card__info-wrapper">
+                  <h3 class="features-card__header">Тренерский опыт</h3>
+                  <p class="features-card__subtitle">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__offers offers" data-test="offers">
+        <div class="offers__wrapper">
+          <h2 class="offers__header">Акции</h2>
+          <div class="offers__content">
+            <div class="offers__main-offer main-offer">
+              <div class="main-offer__card">
+                <div class="main-offer__info-wrapper">
+                  <div class="main-offer__price-wrapper">
+                    <h3 class="main-offer__header">Год</h3>
+                    <p class="main-offer__price">
+                      4999
+                    </p>
+                  </div>
+                  <p class="main-offer__subtitle">
+                    Безлимитный абонемент в тренажёрный зал
+                  </p>
+                </div>
+
+                <a class="main-offer__link link-reset" href="#">Подробнее</a>
+              </div>
+              <picture>
+                <source width="280" height="460" type="image/webp" media="(min-width: 1366px)" srcset="./img/special-offer-desktop@1x.webp 1x, ./img/special-offer-desktop@2x.webp 2x">
+                <source width="400" height="462" type="image/webp" media="(min-width: 768px)" srcset="./img/special-offer-tablet@1x.webp 1x, ./img/special-offer-tablet@2x.webp 2x">
+                <source width="320" height="320" type="image/webp" srcset="./img/special-offer-mobile@1x.webp 1x, ./img/special-offer-mobile@2x.webp 2x">
+                <source width="320" height="360" type="image/jpg" media="(min-width: 1366px)" srcset="./img/special-offer-desktop@1x.jpg 1x, ./img/special-offer-desktop@2x.jpg 2x">
+                <source width="400" height="462" type="image/jpg" srcset="./img/special-offer-tablet@1x.jpg 1x, ./img/special-offer-tablet@2x.jpg 2x">
+                <img class="competitions__image" src="./img/special-offer-tablet@1x.jpg" srcset="./img/special-offer-mobile@2x.jpg 2x" alt="Соревнования по CrossFit" width="320" height="360">
+              </picture>
+            </div>
+
+            <div class="offers__extra-offers extra-offers">
+              <ul class="extra-offers__list list-reset">
+                <li class="extra-offers__item extra-offer">
+                  <h3 class="extra-offer__header">Месяц бесплатно</h3>
+
+                  <p class="extra-offer__subtitle">
+                    Приведи друга, получи абонемент в подарок
+                  </p>
+
+                  <a class="extra-offer__link link-reset" href="#">Подробнее</a>
+                </li>
+
+                <li class="extra-offers__item extra-offer">
+                  <h3 class="extra-offer__header">Скидка 20%</h3>
+
+                  <p class="extra-offer__subtitle">
+                    Корпоративный фитнес с командой
+                  </p>
+
+                  <a class="extra-offer__link link-reset" href="#">Подробнее</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__logo" href="index.html">
+            <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
+          </a>
+
+          <ul class="main-footer__links footer-links list-reset">
+            <li class="footer-links__item">
+              <a class="footer-links__link link-reset" href="#">
+                Услуги
+              </a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link link-reset" href="#">
+                Абонементы
+              </a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link link-reset" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link link-reset" href="#">
+                Тренеры
+              </a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link link-reset" href="#">
+                Расписание
+              </a>
+            </li>
+          </ul>
+
+          <div class="main-footer__socials socials">
+            <ul class="socials__list list-reset">
+              <li class="socials__item">
+                <a class="socials__link socials__icon socials__icon--vkontakte " href="https://vk.com/htmlacademy">
+
+                  <span class="visually-hidden">Vk</span>
+                </a>
+              </li>
+              <li class="socials__item ">
+                <a class="socials__link socials__icon socials__icon--youtube " href="https://www.youtube.com/user/htmlacademyru">
+
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link socials__icon socials__icon--telegram " href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>

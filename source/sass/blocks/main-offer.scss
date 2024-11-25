@@ -1,0 +1,126 @@
+.main-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $banners;
+  color: $accent-text-color;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.main-offer__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 28px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    min-height: 462px;
+    padding: 40px 25px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 460px;
+    padding: 40px 45px;
+    width: 280px;
+  }
+}
+
+.main-offer__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+.main-offer__price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.main-offer__header {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.main-offer__price {
+  margin: 0;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.main-offer__subtitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.main-offer__link {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $background-extra;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

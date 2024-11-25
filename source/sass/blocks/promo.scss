@@ -1,12 +1,8 @@
 .promo {
-  width: 100%;
   background-image: linear-gradient(to right, #1c3477 0, #1a3578 39%, #73184b 76%, #b4022a 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.promo__wrapper, .promo__hero {
+.promo__wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
