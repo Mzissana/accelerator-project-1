@@ -485,67 +485,182 @@
 
       </section>
 
-      <footer class="main-footer" data-test="footer">
-        <div class="main-footer__wrapper">
-          <a class="main-footer__logo" href="index.html">
-            <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
-          </a>
+      <section class="main__faq faq" data-test="faq">
+        <div class="faq__wrapper">
+          <h2 class="faq__header">Вопросы и ответы</h2>
+          <div class="faq__tabs faq-tabs">
+            <button class="faq-tabs__navigation-button button-reset faq-tabs__navigation-button--active" type="button">Центр</button>
+            <button class="faq-tabs__navigation-button button-reset" type="button">Абонемент</button>
+            <button class="faq-tabs__navigation-button button-reset" type="button">Услуги</button>
+            <button class="faq-tabs__navigation-button button-reset" type="button">Правила</button>
+          </div>
 
-          <ul class="main-footer__links footer-links list-reset">
-            <li class="footer-links__item">
-              <a class="footer-links__link link-reset" href="#">
-                Услуги
-              </a>
-            </li>
-            <li class="footer-links__item">
-              <a class="footer-links__link link-reset" href="#">
-                Абонементы
-              </a>
-            </li>
-            <li class="footer-links__item">
-              <a class="footer-links__link link-reset" href="#">
-                Акции
-              </a>
-            </li>
-            <li class="footer-links__item">
-              <a class="footer-links__link link-reset" href="#">
-                Тренеры
-              </a>
-            </li>
-            <li class="footer-links__item">
-              <a class="footer-links__link link-reset" href="#">
-                Расписание
-              </a>
-            </li>
-          </ul>
-
-          <div class="main-footer__socials socials">
-            <ul class="socials__list list-reset">
-              <li class="socials__item">
-                <a class="socials__link socials__icon socials__icon--vkontakte link-reset" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Vk</span>
-                </a>
-              </li>
-              <li class="socials__item ">
-                <a class="socials__link socials__icon socials__icon--ok link-reset" href="#">
-                  <span class="visually-hidden">Одноклассники</span>
-                </a>
+          <div class="faq-tabs__accordion faq-accordion">
+            <ul class="faq-accordion__list list-reset">
+              <li class="faq-accordion__item faq-accordion__item--show">
+                <button>
+                  Как стать членом <span>фитнес&ndash;центра</span>?
+                </button>
+                <div>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+                </div>
               </li>
 
-              <li class="socials__item">
-                <a class="socials__link socials__icon socials__icon--git link-reset" href="#">
-                  <span class="visually-hidden">Github</span>
-                </a>
+              <li class="faq-accordion__item">
+                <button>
+                  Где можно посмотреть расписание?
+                </button>
+              </li>
+
+              <li class="faq-accordion__item">
+                <button>
+                  Есть кулеры в центре? Предоставляются полотенца?
+                </button>
+              </li>
+
+              <li class="faq-accordion__item">
+                <button>
+                  Сколько тренеров работает в клубе и какова их квалификация?
+                </button>
               </li>
             </ul>
           </div>
         </div>
-      </footer>
-    </main>
+      </section>
 
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
+      <section class="main__reviews reviews" data-test="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__header">Отзывы</h2>
+          <div class="reviews__slider reviews-slider">
+            <button class="reviews-slider__next-button reviews-slider__slider-button" type="button">
+              <span class="reviews-slider__button-text">Перейти к следующему члену жюри</span>
+            </button>
+            <button class="reviews-slider__back-button reviews-slider__slider-button" type="button" disabled>
+              <span class="reviews-slider__button-text">Перейти к следующему члену жюри</span>
+            </button>
+            <ul class="reviews-slider__wrapper list-reset">
+              <li class="reviews-slider__review review">
+                <picture>
+                  <source width="80" height="80" type="image/webp" media="(min-width: 768px)" srcset="./img/review-avatar-anna-desktop@1x.webp 1x, ./img/review-avatar-anna-desktop@2x.webp 2x">
+                  <source width="68" height="68" type="image/webp" srcset="./img/review-avatar-anna-mobile@1x.webp 1x, ./img/review-avatar-anna-mobile@2x.webp 2x">
+                  <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="./img/review-avatar-anna-desktop@1x.png 1x, ./img/review-avatar-anna-desktop@2x.png 2x">
+                  <img class="review__image" src="./img/review-avatar-anna-mobile@1x.png" srcset="./img/review-avatar-anna-mobile@2x.png 2x" alt="Фото автора отзыва Анны Орловой" width="68" height="68">
+                </picture>
+                <div class="review__info-wrapper">
+                  <h3 class="review__header">Анна Орлова</h3>
+                  <p class="review__body">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__contacts contacts" data-test="form">
+        <div class="contacts__subscription subscription">
+          <div class="subscription__wrapper">
+            <h2 class="subscription__header">Бесплатное занятие</h2>
+            <form class="subscription__form subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="name">Ваш e-mail</label>
+              <input class="subscription-form__input subscription-form__input--name" type="text" id="name" name="mane" placeholder="Имя" required>
+
+              <label class="visually-hidden" for="phone">Ваш e-mail</label>
+              <input class="subscription-form__input subscription-form__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+              <button class="subscription-form__button button-reset" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="contacts__info contacts-info">
+          <div class="contacts-info__wrapper">
+          <h2 class="contacts-info__header">Контакты</h2>
+          <ul class="contacts-info__list list-reset">
+            <li class="contacts-info__item contact">
+              <h3 class="contact__header">Адрес:</h3>
+              <p class="contact__subtitle">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+
+            <li class="contacts-info__item">
+              <h3 class="contact__header">График работы:</h3>
+              <p class="contact__subtitle">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+
+            <li class="contacts-info__item">
+              <h3 class="contact__header">График работы:</h3>
+              <a class="contact__subtitle" href="tel:+78005555555">8 800 555-55-55</a>
+            </li>
+
+            <li class="contacts-info__item">
+              <h3 class="contact__header">Email:</h3>
+              <p class="contact__subtitle">oмск@supergym.ru</p>
+            </li>
+
+          </ul>
+        </div>
+        </div>
+
+      </section>
+
+      </main>
+
+    <footer class="main-footer" data-test="footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
+        </div>
+
+        <ul class="main-footer__links footer-links list-reset">
+          <li class="footer-links__item">
+            <a class="footer-links__link link-reset" href="#">
+              Услуги
+            </a>
+          </li>
+          <li class="footer-links__item">
+            <a class="footer-links__link link-reset" href="#">
+              Абонементы
+            </a>
+          </li>
+          <li class="footer-links__item">
+            <a class="footer-links__link link-reset" href="#">
+              Акции
+            </a>
+          </li>
+          <li class="footer-links__item">
+            <a class="footer-links__link link-reset" href="#">
+              Тренеры
+            </a>
+          </li>
+          <li class="footer-links__item">
+            <a class="footer-links__link link-reset" href="#">
+              Расписание
+            </a>
+          </li>
+        </ul>
+
+        <div class="main-footer__socials socials">
+          <ul class="socials__list list-reset">
+            <li class="socials__item">
+              <a class="socials__link socials__icon socials__icon--vkontakte link-reset" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Vk</span>
+              </a>
+            </li>
+            <li class="socials__item ">
+              <a class="socials__link socials__icon socials__icon--ok link-reset" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__icon socials__icon--git link-reset" href="#">
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 

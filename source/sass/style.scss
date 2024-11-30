@@ -33,10 +33,21 @@
 @import "./blocks/main-offer.scss";
 @import "./blocks/extra-offers.scss";
 @import "./blocks/extra-offer.scss";
+//faq
+@import "./blocks/faq.scss";
+@import "./blocks/faq-tabs.scss";
+@import "./blocks/faq-accordion.scss";
+
+//reviews
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/reviews-slider.scss";
 
 @import "./blocks/main-footer.scss";
 @import "./blocks/footer-links.scss";
 @import "./blocks/socials.scss";
-
-
-
+@import "./blocks/contacts.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/subscription-form.scss";
+@import "./blocks/contacts-info.scss";
+@import "./blocks/contact.scss";

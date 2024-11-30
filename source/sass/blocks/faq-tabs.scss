@@ -1,0 +1,40 @@
+.faq-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    grid-area: tabs;
+  }
+}
+
+.faq-tabs__navigation-button {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #102654;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  text-align: center;
+  padding: 14px 22px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+
+  }
+}
+
+
