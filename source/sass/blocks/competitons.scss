@@ -1,0 +1,27 @@
+.competitions__wrapper {
+  background-color: $banners;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+.competitions {
+  padding: 25px 15px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+  }
+}

@@ -1,0 +1,77 @@
+.tabs__header {
+  margin: 0;
+  font-family: $accent-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.tabs__navigation {
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 10px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 350px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(120, 120, 120, 0.2);
+    left: 0;
+    height: 2px;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.tabs__navigation-button {
+  border: none;
+  background-color: transparent;
+  color: rgb(120, 120, 120, 0.2);
+}
+
+.tabs__navigation-button--active {
+  position: relative;
+  color: $main-text-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #D10A42;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.tabs__membership-cards {
+  width: 100%;
+}
+

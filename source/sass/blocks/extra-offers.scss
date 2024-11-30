@@ -1,0 +1,33 @@
+.extra-offers {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.extra-offers__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 15px;
+  color: #1c3374;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+
+}
+
+.extra-offers__item {
+  padding: 20px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+  margin: 0;
+}

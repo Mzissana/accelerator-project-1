@@ -7,3 +7,47 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
+
+//blocks
+@import "./blocks/page-body.scss";
+@import "./blocks/page.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/zones.scss";
+@import "./blocks/main-info.scss";
+@import "./blocks/main.scss";
+@import "./blocks/about.scss";
+@import "./blocks/prices.scss";
+@import "./blocks/tabs.scss";
+@import "./blocks/membership-card.scss";
+@import "./blocks/membership-cards.scss";
+@import "./blocks/competitons.scss";
+@import "./blocks/ad.scss";
+@import "./blocks/ad-timetable.scss";
+@import "./blocks/juri.scss";
+@import "./blocks/juri-card.scss";
+@import "./blocks/features-card.scss";
+@import "./blocks/features.scss";
+@import "./blocks/offers.scss";
+@import "./blocks/main-offer.scss";
+@import "./blocks/extra-offers.scss";
+@import "./blocks/extra-offer.scss";
+//faq
+@import "./blocks/faq.scss";
+@import "./blocks/faq-tabs.scss";
+@import "./blocks/faq-accordion.scss";
+
+//reviews
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/reviews-slider.scss";
+
+@import "./blocks/main-footer.scss";
+@import "./blocks/footer-links.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/subscription-form.scss";
+@import "./blocks/contacts-info.scss";
+@import "./blocks/contact.scss";

@@ -1,0 +1,65 @@
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "name phone"
+    "button button";
+    gap: 36px 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 36px 30px;
+  }
+}
+
+.subscription-form__input {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0 0 4px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.subscription-form__input--name {
+  @media (min-width: $tablet-width) {
+    grid-area: name;
+  }
+}
+
+.subscription-form__input--phone {
+  @media (min-width: $tablet-width) {
+    grid-area: phone;
+  }
+}
+
+.subscription-form__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: $shadow-light;
+  text-align: center;
+  padding: 22px 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
+}

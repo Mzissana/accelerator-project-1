@@ -1,0 +1,97 @@
+.features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    gap: 14px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 8px;
+  }
+
+}
+
+.features-card__statistics {
+  background: linear-gradient(127.61deg, #D10A42 0, #0041CA 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.features-card__statistics-subtitle {
+  margin: 0;
+  background: none;
+  color: #2e35ac;
+  -webkit-text-fill-color: #2e35ac;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
+
+.features-card__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 8px;
+  }
+}
+
+.features-card__header {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22x;
+  }
+}
+
+.features-card__subtitle{
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}

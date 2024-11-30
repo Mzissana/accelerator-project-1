@@ -1,0 +1,62 @@
+.socials__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.socials__item {
+  padding: 0;
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+}
+
+.socials__icon {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon--ok::before,
+.socials__icon--git::before,
+.socials__icon--vkontakte::before {
+  content: "";
+  background-color: $background-footer;
+  mask-repeat: no-repeat;
+  mask-image: inherit;
+}
+
+.socials__icon--ok {
+  &::before {
+    mask-image: url(/__spritemap#sprite-ok-icon-view);
+    mask-repeat: no-repeat;
+    height: 16px;
+    width: 9px;
+  }
+}
+
+.socials__icon--git {
+  &::before {
+    mask-image: url(/__spritemap#sprite-social-alien-icon-view);
+    mask-repeat: no-repeat;
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.socials__icon--vkontakte {
+  &::before {
+    height: 7px;
+    width: 12px;
+    mask-image: url(/__spritemap#sprite-vk-icon-view);
+    mask-repeat: no-repeat;
+  }
+}
+
+
+

@@ -1,0 +1,74 @@
+.ad__wrapper {
+  padding: 40px;
+  color: $accent-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px 98px;
+    gap: 30px;
+  }
+}
+
+.ad__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.ad__title {
+  font-size: 48px;
+  line-height: 54px;
+  font-family: $accent-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 117px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+    max-width: 168px;
+  }
+}
+
+.ad__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.ad__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  width: 100%;
+  min-height: 60px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: $shadow-light;
+  text-align: center;
+  padding: 22px 10px;
+}

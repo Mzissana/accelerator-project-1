@@ -1,0 +1,73 @@
+.ad-timetable {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0;
+  max-width: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 95px;
+  }
+}
+
+.ad-timetable__header {
+  margin: 0;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 1px;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
+.ad-timetable__content {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.ad-timetable__content--date {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.ad-timetable__content-extra {
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 300;
+  margin: 0;
+  max-width: 56px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.ad-timetable__date, .ad-timetable__time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
