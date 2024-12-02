@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 40px 0;
+    gap: 37px 0;
     padding: 52px 56px 52px 0;
     justify-content: flex-end;
     align-items: flex-start;
@@ -69,7 +69,7 @@
   @media (min-width: $desktop-width) {
     line-height: 22px;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 72px;
     margin-top: auto;
   }
 }
@@ -100,6 +100,6 @@
     line-height: 12px;
     letter-spacing: 0;
     margin-left: 0;
-    padding: 25px 10px;
+    padding: 25px 10px 25px;
   }
 }
