@@ -17,19 +17,20 @@
   min-height: 245px;
   align-items: flex-start;
 
-
   @media (min-width: $tablet-width) {
-    min-height: 147px;
+    min-height: auto;
     flex-direction: row;
     align-items: center;
-    padding: 30px;
+    padding: 45px;
     width: 768px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    padding: 66px 110px;
+    padding: 40px 102px;
     width: 1366px;
+    gap: unset;
   }
 }
 

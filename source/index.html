@@ -86,9 +86,9 @@
           <div class="about__info">
             <h2 class="about__info-title">Тренажёрный зал</h2>
             <p class="about__info-subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="about__info-description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
             </p>
-            <p class="about__info-additional">
+            <p>
             В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
             </p>
           </div>
@@ -384,23 +384,18 @@
                     <p class="features-card__subtitle">Вы всегда найдёте место для своей машины&nbsp;на нашей парковке</p>
                   </div>
                 </li>
-              </ul>
-            </div>
 
-            <div class="features__list-wrapper features__list-wrapper--accent">
-              <ul class="features__list list-reset">
-                <li class="features__item features-card">
+
+                <li class="features__item features-card features-card--accent">
+                  <div class="features-card__wrapper">
                   <p class="features-card__statistics">
                     100
                     <span class="features-card__statistics-subtitle">Тренажёров</span>
                   </p>
                   <p class="features-card__subtitle">Современные тренажёры на все группы мышц</p>
+                </div>
                 </li>
-              </ul>
-            </div>
 
-            <div class="features__list-wrapper">
-              <ul class="features__list list-reset">
                 <li class="features__item features-card">
                   <p class="features-card__statistics">
                     350
@@ -411,6 +406,7 @@
                   <p class="features-card__subtitle">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                   </div>
                 </li>
+
 
                 <li class="features__item features-card">
                   <p class="features-card__statistics">
@@ -501,10 +497,10 @@
             <ul class="faq-accordion__list list-reset">
               <li class="faq-accordion__item faq-accordion__item--show">
                 <button>
-                  Как стать членом <span>фитнес&ndash;центра</span>?
+                  Как стать членом фитнес&#8209;центра?
                 </button>
                 <div>
-                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
                 </div>
               </li>
 
@@ -569,7 +565,7 @@
 
               <label class="visually-hidden" for="phone">Ваш e-mail</label>
               <input class="subscription-form__input subscription-form__input--phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
-              <button class="subscription-form__button button-reset" type="submit">Подписаться</button>
+              <button class="subscription-form__button button-reset" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -584,17 +580,17 @@
               <p class="contact__subtitle">г. Омск, ул. 60 лет Октября, 7</p>
             </li>
 
-            <li class="contacts-info__item">
+            <li class="contacts-info__item contact">
               <h3 class="contact__header">График работы:</h3>
               <p class="contact__subtitle">Пн-Вс: с 8:00 до 22:00</p>
             </li>
 
-            <li class="contacts-info__item">
-              <h3 class="contact__header">График работы:</h3>
+            <li class="contacts-info__item contact">
+              <h3 class="contact__header">Телефон:</h3>
               <a class="contact__subtitle" href="tel:+78005555555">8 800 555-55-55</a>
             </li>
 
-            <li class="contacts-info__item">
+            <li class="contacts-info__item contact">
               <h3 class="contact__header">Email:</h3>
               <p class="contact__subtitle">oмск@supergym.ru</p>
             </li>
@@ -610,7 +606,11 @@
     <footer class="main-footer" data-test="footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
+          <picture>
+            <source width="136" height="26" srcset="./img/footer-logo-desktop.svg" media="(min-width: 1366px)">
+            <source width="110" height="22" srcset="./img/footer-logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
+          </picture>
         </div>
 
         <ul class="main-footer__links footer-links list-reset">

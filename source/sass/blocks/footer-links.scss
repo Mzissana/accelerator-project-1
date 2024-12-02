@@ -2,5 +2,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 11px 35px;
+  gap: 20px 36px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px 30px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 82px;
+  }
 }

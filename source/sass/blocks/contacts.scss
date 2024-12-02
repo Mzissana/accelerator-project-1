@@ -1,7 +1,8 @@
 .contacts {
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    flex: 1;
+    align-items: stretch;
   }
 }

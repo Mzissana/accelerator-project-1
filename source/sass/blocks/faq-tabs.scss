@@ -24,17 +24,21 @@
   color: #102654;
   border: 1px solid rgba(16, 38, 84, 0.2);
   text-align: center;
-  padding: 14px 22px;
+  padding: 13px 22px;
   width: 140px;
+  min-height: 46px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
+    min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
     width: 260px;
-
   }
 }
 
-
+.faq-tabs__navigation-button--active {
+  color: #ffffff;
+  background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}

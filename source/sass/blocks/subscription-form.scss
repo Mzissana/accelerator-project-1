@@ -1,13 +1,13 @@
 .subscription-form {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 38px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-areas: "name phone"
     "button button";
-    gap: 36px 0;
+    gap: 37px 30px;
     width: 100%;
   }
 
@@ -20,7 +20,7 @@
   background-color: transparent;
   border: none;
   position: relative;
-  padding: 0 0 4px;
+  padding: 4px 0;
   color: #ffffff;
 
   &::before {
@@ -61,5 +61,6 @@
 
   @media (min-width: $tablet-width) {
     grid-area: button;
+    padding: 25px 10px;
   }
 }

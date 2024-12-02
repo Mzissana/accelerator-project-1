@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
 }
 
 .socials__item {

@@ -23,8 +23,16 @@
     padding: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    right: -99px;
+    bottom: 50%;
+    translate: -50% 50%;
+    width: 19px;
+    height: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    right: -88px;
+    right: -114px;
   }
 }
 
@@ -48,8 +56,16 @@
     padding: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    left: -83px;
+    bottom: 50%;
+    translate: -50% 50%;
+    width: 19px;
+    height: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    right: -88px;
+    left: -94px;
   }
 }
 

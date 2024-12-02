@@ -10,7 +10,7 @@
 
 .offers__wrapper {
   width: 100%;
-  padding: 39px 0;
+  padding: 39px 0 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -19,11 +19,13 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 60px 45px;
+    gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1366px;
     padding: 100px 103px;
+    gap: 70px;
   }
 }
 
@@ -37,6 +39,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 45px;
+    gap: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +48,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 103px;
+    gap: 40px;
   }
 }
 
@@ -56,6 +60,11 @@
   line-height: 32px;
 
   @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 54px;
     line-height: 54px;
   }

@@ -8,11 +8,37 @@
 
   @media (min-width: $tablet-width) {
     width: 380px;
+    padding: 60px 0 57px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      right: -272px;
+      width: 400px;
+      height: 405px;
+      background-image: image-set(url("../../img/weights-background-tablet@1x.webp") 1x,
+      url("../../img/weights-background-tablet@2x.webp") 2x,
+      url("../../img/weights-background-tablet@1x.png") 1x,
+      url("../../img/weights-background-tablet@2x.png") 2x
+    );
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 100px 103px;
     width: 1160px;
+
+    &::after {
+      bottom: -42px;
+      right: -268px;
+      width: 470px;
+      height: 490px;
+    }
   }
 }
 
@@ -21,4 +47,12 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }

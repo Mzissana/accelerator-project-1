@@ -1,11 +1,22 @@
+.faq-accordion {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .faq-accordion__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 23px;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    gap: 1px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: accordion;
+    gap: 0;
   }
 }
 
@@ -17,20 +28,28 @@
   margin: 0;
   position: relative;
   width: 100%;
-  padding: 23px 0 0;
+  padding: 20px 0 0;
 
-  /* Полоска для всех элементов, кроме первого */
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0;
+    gap: 25px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
     background-color: #74819c;
-    top: 0;
+    top: -1px;
     left: 0;
   }
 
-  /* Полоска снизу для последнего элемента */
   &:last-of-type::after {
     content: "";
     position: absolute;
@@ -43,7 +62,11 @@
 }
 
 .faq-accordion__item:last-of-type {
-  padding: 23px 0 23px;
+  padding: 20px 0 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+  }
 }
 
 .faq-accordion__item div {
@@ -60,6 +83,22 @@
   position: relative;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 0 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -67,16 +106,51 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid #1C3374;
-    background-image: url(/__spritemap#sprite-plus-icon-view);
-    background-size: 20px 20px;
+    background-image: url("/__spritemap#sprite-plus-icon-view");
+    background-size: 14px 14px;
     background-repeat: no-repeat;
-    background-color: transparent;
-    background-position: 5px 5px;
-    right: 0;
+    background-position: 8px 8px;
+    right: -1px;
     top: 50%;
-    translate: 0 -50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      background-size: 20px 20px;
+      background-position: 10px 10px;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-image: none;
+      background-color: #1C3374;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 1px;
+      right: 8px;
+      top: 50%;
+      background-color: #ffffff;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      z-index: 100;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 1px;
+      right: 10px;
+      background-size: 20px 20px;
+    }
+    }
   }
 }
+
 
 .faq-accordion__item span {
   white-space: nowrap;
@@ -92,6 +166,22 @@
 
 .faq-accordion__item--show div:nth-child(2) {
   display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  max-width: 240px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 660px;
+  }
 }
 
 .faq-accordion__item--show {
@@ -105,4 +195,5 @@
 .faq-accordion button {
   background-color: transparent;
   border: none;
+
 }
