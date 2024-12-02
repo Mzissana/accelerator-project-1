@@ -3,13 +3,12 @@
 }
 
 
-
 .reviews-slider__next-button {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url(/__spritemap#sprite-next-button-view);
+    background-image: url("/__spritemap#sprite-next-button-view");
     background-repeat: no-repeat;
     fill: #102654;
     position: absolute;
@@ -41,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url(/__spritemap#sprite-next-button-view);
+    background-image: url("/__spritemap#sprite-next-button-view");
     background-repeat: no-repeat;
     fill: #102654;
     position: absolute;

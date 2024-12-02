@@ -5,8 +5,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-areas: "name phone"
-    "button button";
+    grid-template-areas:
+      "name   phone"
+      "button button";
     gap: 37px 30px;
     width: 100%;
   }

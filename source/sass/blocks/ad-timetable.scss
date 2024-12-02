@@ -38,7 +38,6 @@
     @media (min-width: $tablet-width) {
       bottom: -3px;
     }
-
   }
 }
 
@@ -80,7 +79,8 @@
   }
 }
 
-.ad-timetable__date, .ad-timetable__time {
+.ad-timetable__date,
+.ad-timetable__time {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -88,6 +88,5 @@
   @media (min-width: $desktop-width) {
     gap: 12px;
   }
-
 }
 

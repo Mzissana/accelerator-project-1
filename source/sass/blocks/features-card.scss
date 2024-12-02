@@ -22,16 +22,13 @@
   }
 }
 
-.features-card:nth-child(3) {
-  grid-row: span 2;
-}
-
 .features-card:nth-child(1) {
   order: 1;
 }
 
 .features-card:nth-child(3) {
   order: 2;
+  grid-row: span 2;
 }
 
 .features-card:nth-child(2) {
@@ -47,9 +44,8 @@
 }
 
 .features-card__statistics {
-  background: linear-gradient(127.61deg, #D10A42 0, #0041CA 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0, #0041ca 45.58%);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 64px;
   line-height: 64px;
@@ -107,7 +103,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 22px;
-    line-height: 22x;
+    line-height: 22px;
   }
 }
 
@@ -183,7 +179,6 @@
     gap: 10px;
   }
 }
-
 
 
 .features-card--accent .features-card__statistics-subtitle {

@@ -13,18 +13,10 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    примеры требуемых атрибутов data-test="*" -->
-
-
-    <header class="promo page__header" data-test="hero">
+    <header class="promo page-body__header" data-test="hero">
       <div class="promo__wrapper">
 
-        <section class="promo__navigation navigation">
+        <div class="promo__navigation navigation">
           <div class="navigation__wrapper">
 
             <div class="navigation__logo">
@@ -36,7 +28,7 @@
             </div>
 
           </div>
-        </section>
+        </div>
 
         <section class="promo__hero hero">
           <div class="hero__wrapper">
@@ -64,7 +56,7 @@
                 </h1>
               </div>
 
-              <a class="main-info__order-button link-reset" href="#prices">
+              <a class="hero__order-button link-reset" href="#prices">
                 Купить абонемент
               </a>
             </div>
@@ -80,7 +72,7 @@
       </div>
     </header>
 
-    <main class="page__main main">
+    <main class="main">
       <section class="main__about about" data-test="about">
         <div class="about__wrapper">
           <div class="about__info">
@@ -103,7 +95,7 @@
               <img class="about__image" src="./img/interior-mobile@1x.jpg" srcset="./img/interior-mobile@2x.jpg 2x" alt="Помещение Supergym внутри" width="320" height="280">
             </picture>
             <div class="about__video-image-container">
-              <button class="about__video-button button-reset"><span class="visually-hidden">Играть</span></button>
+              <button class="about__video-button button-reset" type="button"><span class="visually-hidden">Играть</span></button>
             <picture>
               <source width="360" height="230" type="image/webp" media="(min-width: 1366px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
               <source width="270" height="170" type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
@@ -282,7 +274,7 @@
                 </div>
                 <p class="ad__subtitle">Ежегодные соревнования по CrossFit</p>
               </div>
-              <button class="ad__button button-reset">
+              <button class="ad__button button-reset" type="button">
                 Заполнить заявку
               </button>
             </div>
@@ -304,11 +296,11 @@
           <h2 class="juri__header">Жюри</h2>
           <div class="juri__list">
 
-          <button class="jury__next-button" type="button">
-            <span class="jury__button-text">Перейти к следующему члену жюри</span>
+          <button class="juri__next-button" type="button">
+            <span class="juri__button-text">Перейти к следующему члену жюри</span>
           </button>
-          <button class="jury__back-button" type="button">
-            <span class="jury__button-text">Перейти к следующему члену жюри</span>
+          <button class="juri__back-button" type="button">
+            <span class="juri__button-text">Перейти к следующему члену жюри</span>
           </button>
 
           <ul class="juri__list-wrapper list-reset">
@@ -450,7 +442,7 @@
                 <source width="320" height="360" type="image/webp" srcset="./img/special-offer-mobile@1x.webp 1x, ./img/special-offer-mobile@2x.webp 2x">
                 <source width="320" height="360" type="image/jpg" media="(min-width: 1366px)" srcset="./img/special-offer-desktop@1x.jpg 1x, ./img/special-offer-desktop@2x.jpg 2x">
                 <source width="400" height="462" type="image/jpg" srcset="./img/special-offer-tablet@1x.jpg 1x, ./img/special-offer-tablet@2x.jpg 2x">
-                <img class="competitions__image" src="./img/special-offer-tablet@1x.jpg" srcset="./img/special-offer-mobile@2x.jpg 2x" alt="Соревнования по CrossFit" width="320" height="360">
+                <img class="main-offer__image" src="./img/special-offer-tablet@1x.jpg" srcset="./img/special-offer-mobile@2x.jpg 2x" alt="Соревнования по CrossFit" width="320" height="360">
               </picture>
             </div>
 
@@ -493,10 +485,10 @@
             <button class="faq-tabs__navigation-button button-reset" type="button">Правила</button>
           </div>
 
-          <div class="faq-tabs__accordion faq-accordion">
+          <div class="faq__accordion faq-accordion">
             <ul class="faq-accordion__list list-reset">
               <li class="faq-accordion__item faq-accordion__item--show">
-                <button>
+                <button type="button">
                   Как стать членом фитнес&#8209;центра?
                 </button>
                 <div>
@@ -505,19 +497,19 @@
               </li>
 
               <li class="faq-accordion__item">
-                <button>
+                <button type="button">
                   Где можно посмотреть расписание?
                 </button>
               </li>
 
               <li class="faq-accordion__item">
-                <button>
+                <button type="button">
                   Есть кулеры в центре? Предоставляются полотенца?
                 </button>
               </li>
 
               <li class="faq-accordion__item">
-                <button>
+                <button type="button">
                   Сколько тренеров работает в клубе и какова их квалификация?
                 </button>
               </li>
@@ -607,8 +599,8 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <picture>
-            <source width="136" height="26" srcset="./img/footer-logo-desktop.svg" media="(min-width: 1366px)">
-            <source width="110" height="22" srcset="./img/footer-logo-tablet.svg" media="(min-width: 768px)">
+            <source width="136" height="26" type="image/svg" srcset="./img/footer-logo-desktop.svg" media="(min-width: 1366px)">
+            <source width="110" height="22" type="image/svg" srcset="./img/footer-logo-tablet.svg" media="(min-width: 768px)">
             <img class="main-footer__logo-img" src="./img/supergym-logo.svg" width="100" height="20" alt="Товарный знак компании Supergym">
           </picture>
         </div>

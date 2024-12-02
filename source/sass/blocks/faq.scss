@@ -27,8 +27,9 @@
     width: 1366px;
     padding: 100px 103px;
     display: grid;
-    grid-template-areas: "header header"
-    "tabs accordion";
+    grid-template-areas:
+      "header header"
+      "tabs   accordion";
     grid-template-columns: 260px 1fr;
     gap: 50px 40px;
     align-items: flex-start;
@@ -53,5 +54,4 @@
     line-height: 54px;
   }
 }
-
 

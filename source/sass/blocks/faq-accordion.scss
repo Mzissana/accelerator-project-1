@@ -105,7 +105,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #1C3374;
+    border: 1px solid #1c3374;
     background-image: url("/__spritemap#sprite-plus-icon-view");
     background-size: 14px 14px;
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@
   &:active {
     &::after {
       background-image: none;
-      background-color: #1C3374;
+      background-color: #1c3374;
     }
 
     &::before {
@@ -141,12 +141,12 @@
       cursor: pointer;
       z-index: 100;
 
-    @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 1px;
-      right: 10px;
-      background-size: 20px 20px;
-    }
+      @media (min-width: $tablet-width) {
+        width: 20px;
+        height: 1px;
+        right: 10px;
+        background-size: 20px 20px;
+      }
     }
   }
 }
@@ -195,5 +195,4 @@
 .faq-accordion button {
   background-color: transparent;
   border: none;
-
 }

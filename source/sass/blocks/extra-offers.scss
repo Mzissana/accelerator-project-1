@@ -22,12 +22,11 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
-
 }
 
 .extra-offers__item {
   padding: 20px;
   border: 7px solid transparent;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   margin: 0;
 }

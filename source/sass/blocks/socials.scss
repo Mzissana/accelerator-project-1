@@ -41,7 +41,7 @@
 
 .socials__icon--ok {
   &::before {
-    mask-image: url(/__spritemap#sprite-ok-icon-view);
+    mask-image: url("/__spritemap#sprite-ok-icon-view");
     mask-repeat: no-repeat;
     height: 16px;
     width: 9px;
@@ -50,7 +50,7 @@
 
 .socials__icon--git {
   &::before {
-    mask-image: url(/__spritemap#sprite-social-alien-icon-view);
+    mask-image: url("/__spritemap#sprite-social-alien-icon-view");
     mask-repeat: no-repeat;
     height: 14px;
     width: 14px;
@@ -61,10 +61,8 @@
   &::before {
     height: 7px;
     width: 12px;
-    mask-image: url(/__spritemap#sprite-vk-icon-view);
+    mask-image: url("/__spritemap#sprite-vk-icon-view");
     mask-repeat: no-repeat;
   }
 }
-
-
 

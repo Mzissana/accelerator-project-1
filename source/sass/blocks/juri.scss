@@ -43,12 +43,12 @@
   gap: 40px;
 }
 
-.jury__next-button {
+.juri__next-button {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url(/__spritemap#sprite-next-button-view);
+    background-image: url("/__spritemap#sprite-next-button-view");
     background-repeat: no-repeat;
     background-size: contain;
     fill: #102654;
@@ -68,12 +68,12 @@
   }
 }
 
-.jury__back-button {
+.juri__back-button {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url(/__spritemap#sprite-next-button-view);
+    background-image: url("/__spritemap#sprite-next-button-view");
     background-repeat: no-repeat;
     fill: #102654;
     position: absolute;
@@ -93,7 +93,7 @@
   }
 }
 
-.jury__button-text {
+.juri__button-text {
   display: none;
 }
 

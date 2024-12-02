@@ -7,7 +7,6 @@
   padding: 50px 42px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px;
     gap: 22px;
     width: 380px;
     padding: 65px;
@@ -17,7 +16,6 @@
   @media (min-width: $desktop-width) {
     width: 360px;
     gap: 17px;
-
   }
 }
 
@@ -53,7 +51,7 @@
 .membership-card__price {
   padding: 49px 71px 0 37px;
   margin: 0;
-  color:#103AAE;
+  color: #103aae;
   font-size: 48px;
   line-height: 150%;
   font-weight: 700;
@@ -76,7 +74,7 @@
 
 .membership-card__price::before {
   content: "";
-  background-image: url(/__spritemap#sprite-rubble-sign-view);
+  background-image: url("/__spritemap#sprite-rubble-sign-view");
   background-repeat: no-repeat;
   fill: #102654;
   position: absolute;
@@ -110,7 +108,7 @@
   line-height: 120px;
   font-weight: 700;
   opacity: 48%;
-  color: #E8E8E8;
+  color: #e8e8e8;
   pointer-events: none;
 
   @media (min-width: $tablet-width) {
